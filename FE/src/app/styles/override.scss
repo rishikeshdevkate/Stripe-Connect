@@ -1,0 +1,205 @@
+// bootstrap input css
+.form-control {
+  height: 40px;
+  color: #828282 !important;
+  line-height: 130% !important;
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+}
+.form-control:focus {
+  color: #828282 !important;
+}
+
+.form-control.is-invalid {
+  background-image: none !important;
+}
+
+.company-name-navbar:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+a {
+  color: #4f4f4f;
+}
+
+a:hover {
+  color: #4f4f4f !important;
+  // text-decoration: none;
+}
+
+.outline-none {
+  outline: none;
+}
+
+:focus {
+  outline: none !important;
+}
+
+.primary-btn:focus,
+.secondary-btn:focus,
+.showcases-btn:focus,
+.social-button-box:focus,
+.link-class:focus {
+  border-color: #80bdff !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+  outline: none;
+}
+// pop-up modal override css
+
+.modal-lg {
+  max-width: 760px;
+}
+#logout-modal {
+  margin: 12% auto 0px auto;
+}
+.modal-content {
+  border-radius: 0px;
+  border: none;
+  background-color: #ffffff;
+}
+.modal-body {
+  padding: 2rem;
+}
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  // background: rgba(9, 30, 66, 0.54) none repeat scroll 0% 0%;
+}
+.modal-open {
+  // overflow-y: auto !important;
+  padding-right: 0px !important;
+}
+
+// bootstrap text override
+
+.text-primary {
+  color: #4c516e !important;
+}
+
+/* radio box css */
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 19px;
+  display: inline-block;
+  // color: #899bb3;
+}
+
+[type="radio"]:checked + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 19px;
+  display: inline-block;
+  // color: #182c4c;
+}
+
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #4f4f4f;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type="radio"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #4f4f4f;
+  border-radius: 50px;
+  background: #fff;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #4f4f4f;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.init-spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 767px) {
+  .video-js .vjs-big-play-button {
+    top: 50px !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .vjs-poster {
+    background-size: cover !important;
+  }
+  .stripe-payment-form {
+    .modal-body {
+      padding: 0px;
+    }
+  }
+}
+
+// ng select override placeholder
+
+.search-drop-down-course
+  .ng-select
+  .ng-select-container
+  .ng-value-container
+  .ng-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  float: left;
+  color: #bdbdbd !important;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.position-abs {
+  position: absolute !important;
+}

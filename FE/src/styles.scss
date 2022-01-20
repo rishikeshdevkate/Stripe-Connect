@@ -1,0 +1,625 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "app/styles/app-base.scss";
+@import "app/styles/variables.scss";
+@import "app/styles/override.scss";
+@import "app/styles/mobile.scss";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~ngx-sharebuttons/themes/material/material-light-theme";
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", Serif, Sans-serif, cursive, fantasy, Monospace;
+  color: #4f4f4f;
+}
+
+.time-popover-override {
+  .popover {
+    margin-left: 285px !important;
+  }
+
+  .popover.bottom .arrow {
+    margin-left: 96px !important;
+  }
+
+  .popover .btn-link {
+    font-weight: 400;
+    color: #4f4f4f;
+    text-decoration: none;
+  }
+
+  .popover .btn {
+    color: #495057;
+    outline: none;
+  }
+}
+
+.ngb-dp-arrow .btn-link {
+  color: #4f4f4f;
+  outline: none;
+}
+
+.ngb-dp-weekday {
+  color: #4f4f4f;
+}
+
+.override-date-css {
+  .ngb-dp-month:first-child .ngb-dp-week {
+    width: 106% !important;
+  }
+  .dropdown-menu.show {
+    width: 90% !important;
+  }
+}
+
+.override-newsletter-time {
+  .popover {
+    margin-left: 13px !important;
+  }
+
+  .popover.bottom .arrow {
+    margin-left: 27px !important;
+  }
+
+  .popover .btn-link {
+    font-weight: 400;
+    color: #4f4f4f;
+    text-decoration: none;
+  }
+
+  .popover .btn {
+    color: #495057;
+    outline: none;
+  }
+}
+
+.date-range-css {
+  .dropdown-menu.show {
+    display: block;
+    margin-top: 50px;
+    /* width: 152%; */
+  }
+}
+.ngx-slider .ngx-slider-pointer {
+  width: 10px !important;
+  height: 10px !important;
+  top: -3px !important;
+  background-color: #2d9cdb !important;
+  z-index: 3 !important;
+  border-radius: 16px !important;
+}
+
+.ngx-slider .ngx-slider-pointer:after {
+  content: none !important;
+}
+
+.ngx-slider .ngx-slider-selection {
+  background-color: #2d9cdb !important;
+  visibility: visible !important;
+}
+
+.ngx-file-drop__drop-zone {
+  border: none !important;
+  height: 83.3px !important;
+}
+
+.ngx-file-drop__content {
+  height: 83.3px !important;
+  color: #4f4f4f !important;
+}
+.search-drop-down {
+  .ng-select.ng-select-single .ng-select-container {
+    margin-left: 24px;
+    width: 90%;
+    border-radius: 0px;
+    padding-left: 23px;
+    color: #828282 !important;
+  }
+
+  .ng-dropdown-panel.ng-select-bottom {
+    width: 90%;
+    margin-left: 24px;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+
+  .ng-dropdown-panel.ng-select-top {
+    width: 90%;
+    margin-left: 24px;
+    margin-bottom: -32px;
+    cursor: pointer;
+  }
+  .ng-select .ng-arrow-wrapper {
+    background: white url(../src/assets/icons/down_arrow.svg) no-repeat;
+    margin-top: 15px;
+  }
+
+  .ng-select .ng-arrow-wrapper .ng-arrow {
+    border-style: none;
+  }
+
+  .ng-select .ng-select-container .ng-value-container .ng-input > input {
+    padding-left: 24px;
+    cursor: pointer;
+  }
+
+  .ng-select .ng-clear-wrapper {
+    display: none;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items :hover {
+    background-color: #e2e6ea !important;
+    color: black !important;
+    cursor: pointer !important;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+    background-color: white;
+    color: #333;
+  }
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected,
+  .ng-dropdown-panel
+    .ng-dropdown-panel-items
+    .ng-option.ng-option-selected.ng-option-marked {
+    color: #333;
+    background-color: white;
+  }
+  .ng-dropdown-panel
+    .ng-dropdown-panel-items
+    .ng-option.ng-option-selected
+    .ng-option-label,
+  .ng-dropdown-panel
+    .ng-dropdown-panel-items
+    .ng-option.ng-option-selected.ng-option-marked
+    .ng-option-label {
+    font-weight: normal;
+  }
+  .ng-select.ng-select-single
+    .ng-select-container
+    .ng-value-container
+    .ng-input {
+    cursor: pointer;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    padding-left: 33px;
+    white-space: break-spaces !important;
+  }
+}
+
+.search-drop-down-course {
+  .ng-select.ng-select-single .ng-select-container {
+    width: 100%;
+    border-radius: 0px;
+    color: #828282 !important;
+  }
+
+  .ng-dropdown-panel.ng-select-bottom {
+    width: 100%;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+
+  .ng-dropdown-panel.ng-select-top {
+    width: 100%;
+    margin-bottom: -32px;
+    cursor: pointer;
+  }
+  .ng-select .ng-arrow-wrapper {
+    background: white url(../src/assets/icons/down_arrow.svg) no-repeat;
+    margin-top: 15px;
+  }
+
+  .ng-select .ng-arrow-wrapper .ng-arrow {
+    border-style: none;
+  }
+
+  .ng-select .ng-select-container .ng-value-container .ng-input > input {
+    // padding-left: 24px;
+    cursor: pointer;
+  }
+
+  .ng-select .ng-clear-wrapper {
+    display: none;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items :hover {
+    background-color: #e2e6ea !important;
+    color: black !important;
+    cursor: pointer !important;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+    background-color: white;
+    color: #333;
+  }
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected,
+  .ng-dropdown-panel
+    .ng-dropdown-panel-items
+    .ng-option.ng-option-selected.ng-option-marked {
+    color: #333;
+    background-color: white;
+  }
+  .ng-dropdown-panel
+    .ng-dropdown-panel-items
+    .ng-option.ng-option-selected
+    .ng-option-label,
+  .ng-dropdown-panel
+    .ng-dropdown-panel-items
+    .ng-option.ng-option-selected.ng-option-marked
+    .ng-option-label {
+    font-weight: normal;
+  }
+  .ng-select.ng-select-single
+    .ng-select-container
+    .ng-value-container
+    .ng-input {
+    cursor: pointer;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    white-space: break-spaces !important;
+  }
+}
+
+.search-drop-down1 {
+  .ng-select .ng-clear-wrapper {
+    margin-top: 4px;
+    cursor: pointer;
+  }
+
+  .ng-select.ng-select-single .ng-select-container {
+    border-radius: 0;
+    color: #828282 !important;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+  }
+  .ng-select .ng-select-container .ng-value-container .ng-placeholder {
+    font-size: 14px;
+    color: #bdbdbd;
+    cursor: pointer;
+  }
+  .ng-select .ng-select-container .ng-value-container .ng-input > input {
+    // padding-left: 24px;
+    cursor: pointer;
+  }
+}
+
+.stripe-payment-form {
+  .search-drop-down1 {
+    .ng-select .ng-select-container .ng-value-container .ng-placeholder {
+      font-size: 16px;
+      color: #828282;
+    }
+  }
+}
+
+#card-errors {
+  color: red;
+}
+
+.video-js .vjs-big-play-button {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sb-group {
+  display: inline-block !important;
+}
+
+// social share css override
+
+.sb-material-light .sb-wrapper {
+  font-size: 11px !important;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+.decoration-none {
+  text-decoration: none !important;
+}
+
+.text-urlStr,
+.text-urlStr:hover {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.notif-head-text {
+  // font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4f4f4f;
+}
+
+.notification-toast {
+  background-color: #ffffff !important;
+  color: #4f4f4f !important;
+  width: 330px !important;
+  padding: 15px !important;
+}
+
+.notification-toast .toast-close-button {
+  color: #4f4f4f !important;
+}
+
+.toast-notify-img img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.setting-menu-box {
+  border-radius: 0px;
+  transform: translate3d(136px, 46px, 0px);
+  width: 250px;
+}
+
+.settings-item {
+  cursor: pointer !important;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
+.settings-item:hover {
+  background-color: #e2e6ea !important;
+}
+.settings-item:active {
+  background: none;
+}
+.settings-item span {
+  color: #4f4f4f !important;
+}
+
+.info-content,
+.info-content:hover {
+  color: #2d9cdb !important;
+  font-weight: 400;
+}
+
+.second-sub-nav {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  height: 47px;
+  margin-bottom: -5px;
+  margin-top: -15px;
+}
+
+.sub-nav-item {
+  height: 38px;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 190.65% !important;
+  color: #022e73;
+  padding: 4px 27px 32px 21px;
+}
+
+.sub-nav-item:hover {
+  text-decoration: none;
+}
+
+.sub-nav-active {
+  height: 38px;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 190.65% !important;
+  color: #022e73;
+  padding: 4px 27px 32px 21px;
+  background: #f3f3f3;
+}
+.sub-nav-continerbox {
+  padding: 30px 0px 10px 0px;
+}
+.search-input-box {
+  outline: none;
+  height: 40px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  max-width: 531px;
+  width: 100%;
+  background: white url(./assets/icons/search-icon.svg) left no-repeat;
+  padding-left: 44px;
+  color: #4f4f4f;
+  background-position-x: 14px;
+}
+
+.daterange-picker::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: #bdbdbd;
+}
+.daterange-picker::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: #bdbdbd;
+}
+.search-input-box::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: #bdbdbd;
+}
+
+.search-input-box::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: #bdbdbd;
+}
+.search-input-box:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: #bdbdbd;
+}
+.search-input-box::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: #bdbdbd;
+}
+
+.create-product-carousel {
+  .carousel-arrow-prev {
+    left: -50px !important;
+  }
+  .carousel-arrow-next {
+    right: -50px !important;
+  }
+  .carousel {
+    z-index: 10 !important;
+  }
+}
+
+.product-details-carousel {
+  .carousel-arrow-prev {
+    left: -25px !important;
+    top: 85px !important;
+  }
+  .carousel-arrow-next {
+    right: -25px !important;
+    top: 85px !important;
+  }
+  .carousel {
+    z-index: 10 !important;
+  }
+}
+
+.user-product-details-carousel {
+  .carousel-arrow-prev {
+    left: -25px !important;
+    top: 85px !important;
+  }
+  .carousel-arrow-next {
+    right: -25px !important;
+    top: 85px !important;
+  }
+  .carousel {
+    z-index: 10 !important;
+  }
+
+  @media (max-width: 1024px) {
+    .carousel-arrow-prev {
+      left: -11px !important;
+      top: 50% !important;
+    }
+    .carousel-arrow-next {
+      right: -11px !important;
+      top: 50% !important;
+    }
+    .carousel {
+      z-index: 10 !important;
+    }
+  }
+}
+
+.review-carousel {
+  .carousel-arrow-prev {
+    left: -40px !important;
+    top: 85px !important;
+  }
+  .carousel-arrow-next {
+    right: -25px !important;
+    top: 85px !important;
+  }
+  .carousel {
+    z-index: 10 !important;
+  }
+}
+
+.user-review-carousel {
+  .carousel-arrow-prev {
+    left: -40px !important;
+    top: 85px !important;
+  }
+  .carousel-arrow-next {
+    right: -25px !important;
+    top: 85px !important;
+  }
+  .carousel {
+    z-index: 10 !important;
+  }
+  @media (max-width: 1024px) {
+    .carousel-arrow-prev {
+      left: -15px !important;
+      top: 35% !important;
+    }
+    .carousel-arrow-next {
+      right: 0px !important;
+      top: 35% !important;
+    }
+  }
+}
+
+#similar-products {
+  .carousel-cells .carousel-cell {
+    height: auto;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel {
+    height: 340px !important;
+  }
+}
+
+.product-popup {
+  .carousel-arrow-prev {
+    left: -25px !important;
+    top: 14% !important;
+  }
+  .carousel-arrow-next {
+    right: -25px !important;
+    top: 14% !important;
+  }
+  .carousel {
+    z-index: 10 !important;
+  }
+
+  @media (max-width: 1024px) {
+    .carousel-arrow-prev {
+      left: -22px !important;
+      top: 19% !important;
+    }
+    .carousel-arrow-next {
+      right: -22px !important;
+      top: 19% !important;
+    }
+    .carousel {
+      z-index: 10 !important;
+    }
+    .carousel-cells {
+      width: 331.4px !important;
+    }
+  }
+}
+
+.h-20 {
+  height: 20px;
+}
+.w-20 {
+  width: 20px;
+}
+.ml-40per {
+  margin-left: 40%;
+}
+
+.push-notification-body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
